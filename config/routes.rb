@@ -6,6 +6,7 @@ Rails.application.routes.draw do
   get "resources"  => "resources#index", :as => "resources"
   get "contactus"  => "contactus#index", :as => "contactus"
   get "activities"  => "activities#index", :as => "activities"
+  get "members"  => "services#index", :as => "members"
   get "home"  => "home#index", :as => "home"
   
   root to: "home#index"
