@@ -24,14 +24,6 @@ html body
     min-height: 100%;  
 }
 
-.main-layout
-{
-	margin: 1em 4em;
-	background: none repeat scroll 0 0 #FFFFFF;
-	border-radius: 4px;
-	min-height: 100%;   
-}
-
 
 html body nav.navbar.navbar-default div.container-fluid div.navbar-header a.navbar-brand
 {
@@ -121,3 +113,37 @@ li.header-menuitem:hover
   position: relative;
   z-index: 0; }
 
+
+html, body {
+    height: 100%;
+    padding: 1em 3em 1em 3em;
+}
+
+/* give the wrapper a padding-bottom and negative margin-bottom equal to the footer height */
+
+
+.main-layout
+{
+
+	min-height: 100%;   
+	margin: 0 0 0 0;
+	background: none repeat scroll 0 0 #FFFFFF;
+	border-radius: 4px;
+    padding-bottom: 0;
+}
+
+.wrapper
+{
+		height: 100%;
+}
+
+.main-content
+{
+
+	height: 100%;
+}
+
+
+.footer {
+    height: 3em;
+}
