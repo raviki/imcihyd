@@ -119,7 +119,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  coffee-rails (~> 4.0.0)
+  coffee-rails
   jbuilder (~> 2.0)
   jquery-rails
   pg
@@ -131,4 +131,4 @@ DEPENDENCIES
   spring
   turbolinks
   twitter-bootstrap-rails
-  uglifier (>= 1.3.0)
+  uglifier
