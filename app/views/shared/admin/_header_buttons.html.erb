@@ -1,0 +1,61 @@
+<li class="active"><%#=  link_to site_name, :root %></li>
+<li class="has-dropdown">
+  <%= link_to 'Fulfillments', home_path %>
+  <ul class="dropdown">
+    <li><%= link_to 'Orders', home_path %></li>
+  </ul>
+</li>
+<li class="has-dropdown">
+  <%= link_to 'Merchandise', home_path %>
+  <ul class="dropdown">
+    <li><%= link_to 'Products', home_path %></li>
+    <li><%= link_to 'Categories', home_path %></li>
+  </ul>
+</li>
+<li class="has-dropdown">
+  <%= link_to "Customers", home_path %>
+  <ul class="dropdown">
+    <li><%= link_to 'Customers',      home_path %></li>
+    <li><%= link_to 'Customer Groups',home_path %></li>
+    <li><%= link_to 'Customer Leads', home_path %></li>
+  </ul>
+</li>
+<li class="has-dropdown">
+  <%= link_to "Partners", home_path %>
+  <ul class="dropdown">
+    <li><%= link_to 'Stores',      home_path %></li>
+  </ul>
+</li>
+<!% if current_user.super_admin? %>
+  <li class="has-dropdown">
+    <%= link_to "Config", home_path %>
+    <ul class="dropdown">
+      <li><%= link_to 'Accounts',           home_path %></li>
+      <li><%= link_to 'Import/Export CSV',           home_path %></li>
+    </ul>
+  </li>
+<!% end %>
+<li class="has-dropdown">
+  <%= link_to "Coupons/Deals", home_path %>
+  <ul class="dropdown">
+    <li><%= link_to 'Vouchers', home_path %></li>
+  </ul>
+</li>
+<li class="has-dropdown">
+  <%= link_to "History", home_path %>
+  <ul class="dropdown">
+    <li><%= link_to 'Order Log', home_path %></li>
+    <li><%= link_to "Activity Log", home_path %></li>
+    <li><%= link_to 'Help', home_path %></li>
+  </ul>
+</li>
+<!% unless recent_admin_users.empty? %>
+  <li class="has-dropdown">
+    <%= link_to "Recent", '#' %>
+    <ul class="dropdown">
+      <!% recent_admin_users.each do |recent_user_email, recent_user_id| %>
+      <li><!%= link_to recent_user_email, admin_user_path(recent_user_id) %></li>
+      <!% end %>
+    </ul>
+  </li>
+<!% end %>

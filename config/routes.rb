@@ -1,5 +1,9 @@
 Rails.application.routes.draw do
 
+  namespace :admin do
+    root to: "home#index"
+  end
+
   get 'activities/index'
 
   get "aboutus"  => "aboutus#index", :as => "aboutus"

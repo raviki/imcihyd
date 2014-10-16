@@ -146,3 +146,16 @@ li.header-menuitem:hover
 .footer {
     height: 3em;
 }
+
+
+.resources_page .thumbnail-img
+{
+	height:15em;
+}
+
+
+.resources_page.text-center .thumbnail-img img
+{
+	max-width: 100%;
+  	max-height:15em;
+}
