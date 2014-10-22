@@ -1,5 +1,13 @@
 Rails.application.routes.draw do
 
+  get 'password_resets/update'
+
+  get 'password_resets/new'
+
+  get 'password_resets/edit'
+
+  get 'sessions/new'
+
   namespace :admin do
     root to: "home#index"
   end

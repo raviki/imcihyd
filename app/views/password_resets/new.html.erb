@@ -1,0 +1,11 @@
+<div class="password-reset-page center">
+
+<div class="span11 visible-desktop visible-tablet" style="min-height:75px;"></div>
+
+<%= form_tag password_resets_path, :method => :post do %>
+		<div class="form-horizontal center span6">
+    		<%= render 'reset_form' %>
+  		</div>
+<% end %>
+	
+</div>

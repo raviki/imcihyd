@@ -11,7 +11,35 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141015144858) do
+ActiveRecord::Schema.define(version: 20141017053920) do
+
+  create_table "create_members", force: true do |t|
+    t.string   "MembershipId"
+    t.string   "MembershipType"
+    t.boolean  "Certified"
+    t.string   "Prefix"
+    t.string   "FirstName"
+    t.string   "MiddleName"
+    t.string   "LastName"
+    t.string   "Title"
+    t.string   "ShortSummary"
+    t.string   "FullSammary"
+    t.string   "Address"
+    t.string   "City"
+    t.decimal  "Pin"
+    t.decimal  "MobilePhone"
+    t.string   "LandLine"
+    t.string   "EmailPrimary"
+    t.string   "Email"
+    t.string   "Secondary"
+    t.string   "WebsitePrimary"
+    t.string   "WebsiteSecondary"
+    t.float    "DisplayOrder"
+    t.boolean  "active"
+    t.boolean  "IsAdmin"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "members", force: true do |t|
     t.string  "MembershipId"
