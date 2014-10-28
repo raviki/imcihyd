@@ -4,6 +4,7 @@
   <title>Imcihyd</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  
   <%= csrf_meta_tags %>
    <link href="/assets/favicon.png" rel="shortcut icon" type="image/vnd.microsoft.icon" />
     
@@ -22,7 +23,7 @@
 
    	<%= render 'layouts/footer' %>
 
-
+<%= yield :scripts %>
 </div>
 
 </body>

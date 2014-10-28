@@ -6,9 +6,11 @@ gem 'rails', '4.1.6'
 # Use sqlite3 as the database for Active Record
 gem 'pg', group: :production
 gem 'sqlite3', group: :development
-gem 'sqlite3', group: :test
 gem 'rails_12factor', group: :production
 # Use SCSS for stylesheets
+
+gem 'geocoder'
+gem 'gmaps4rails'
 
 gem 'rails-bootstrap'
 
