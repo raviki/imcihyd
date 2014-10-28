@@ -1,6 +1,5 @@
 Rails.application.routes.draw do
 
-  resources :locations
 
   get 'password_resets/update'
 

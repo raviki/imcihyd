@@ -11,6 +11,8 @@
  * file per style scope.
  *
  *= require bootstrap.min
+ *= require bootstrap
+ *= require bootstrap-responsive.css
  *= require pages
  *= require_tree .
  *= require_self
