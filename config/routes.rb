@@ -4,6 +4,8 @@ Rails.application.routes.draw do
   resources :db_members
 
   resources :users
+  resources :locations 
+  
   get 'users/new'
 
   get 'password_resets/update'
