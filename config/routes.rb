@@ -1,13 +1,20 @@
 Rails.application.routes.draw do
 
 
+  resources :db_members
+
+  resources :users
+  get 'users/new'
+
   get 'password_resets/update'
 
   get 'password_resets/new'
 
   get 'password_resets/edit'
 
-  get 'sessions/new'
+  resources :sessions
+  
+  get "login"  => "sessions#new", :as => "login"
 
   namespace :admin do
     root to: "home#index"
@@ -19,7 +26,7 @@ Rails.application.routes.draw do
   get "resources"  => "resources#index", :as => "resources"
   get "contactus"  => "contactus#index", :as => "contactus"
   get "activities"  => "activities#index", :as => "activities"
-  get "members"  => "services#index", :as => "members"
+  get "members" => "members#index", :as => "members"
   get "home"  => "home#index", :as => "home"
   
   root to: "home#index"

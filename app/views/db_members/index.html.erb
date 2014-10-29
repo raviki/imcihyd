@@ -1,0 +1,69 @@
+<h1>Listing db_members</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Membershipid</th>
+      <th>Membershiptype</th>
+      <th>Certified</th>
+      <th>Prefix</th>
+      <th>Firstname</th>
+      <th>Middlename</th>
+      <th>Lastname</th>
+      <th>Title</th>
+      <th>Shortsummary</th>
+      <th>Fullsammary</th>
+      <th>Address</th>
+      <th>City</th>
+      <th>Pin</th>
+      <th>Mobilephone</th>
+      <th>Landline</th>
+      <th>Emailprimary</th>
+      <th>Email</th>
+      <th>Secondary</th>
+      <th>Websiteprimary</th>
+      <th>Websitesecondary</th>
+      <th>Displayorder</th>
+      <th>Active</th>
+      <th>Isadmin</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @db_members.each do |db_member| %>
+      <tr>
+        <td><%= db_member.MembershipId %></td>
+        <td><%= db_member.MembershipType %></td>
+        <td><%= db_member.Certified %></td>
+        <td><%= db_member.Prefix %></td>
+        <td><%= db_member.FirstName %></td>
+        <td><%= db_member.MiddleName %></td>
+        <td><%= db_member.LastName %></td>
+        <td><%= db_member.Title %></td>
+        <td><%= db_member.ShortSummary %></td>
+        <td><%= db_member.FullSammary %></td>
+        <td><%= db_member.Address %></td>
+        <td><%= db_member.City %></td>
+        <td><%= db_member.Pin %></td>
+        <td><%= db_member.MobilePhone %></td>
+        <td><%= db_member.LandLine %></td>
+        <td><%= db_member.EmailPrimary %></td>
+        <td><%= db_member.Email %></td>
+        <td><%= db_member.Secondary %></td>
+        <td><%= db_member.WebsitePrimary %></td>
+        <td><%= db_member.WebsiteSecondary %></td>
+        <td><%= db_member.DisplayOrder %></td>
+        <td><%= db_member.active %></td>
+        <td><%= db_member.IsAdmin %></td>
+        <td><%= link_to 'Show', db_member %></td>
+        <td><%= link_to 'Edit', edit_db_member_path(db_member) %></td>
+        <td><%= link_to 'Destroy', db_member, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Db member', new_db_member_path %>

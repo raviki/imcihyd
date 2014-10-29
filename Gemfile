@@ -9,8 +9,6 @@ gem 'sqlite3', group: :development
 gem 'rails_12factor', group: :production
 # Use SCSS for stylesheets
 
-gem 'geocoder'
-gem 'gmaps4rails'
 
 gem 'rails-bootstrap'
 
@@ -39,7 +37,9 @@ gem 'sdoc', '~> 0.4.0',          group: :doc
 gem 'spring',        group: :development
 
 
-
+gem 'geocoder'
+gem 'gmaps4rails'
+gem 'bcrypt', '~> 3.1.7'
 
 
 

@@ -1,0 +1,51 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  MembershipId: MyString
+  MembershipType: MyString
+  Certified: false
+  Prefix: MyString
+  FirstName: MyString
+  MiddleName: MyString
+  LastName: MyString
+  Title: MyString
+  ShortSummary: MyString
+  FullSammary: MyString
+  Address: MyString
+  City: MyString
+  Pin: 9.99
+  MobilePhone: 9.99
+  LandLine: MyString
+  EmailPrimary: MyString
+  Email: MyString
+  Secondary: MyString
+  WebsitePrimary: MyString
+  WebsiteSecondary: MyString
+  DisplayOrder: 1.5
+  active: false
+  IsAdmin: false
+
+two:
+  MembershipId: MyString
+  MembershipType: MyString
+  Certified: false
+  Prefix: MyString
+  FirstName: MyString
+  MiddleName: MyString
+  LastName: MyString
+  Title: MyString
+  ShortSummary: MyString
+  FullSammary: MyString
+  Address: MyString
+  City: MyString
+  Pin: 9.99
+  MobilePhone: 9.99
+  LandLine: MyString
+  EmailPrimary: MyString
+  Email: MyString
+  Secondary: MyString
+  WebsitePrimary: MyString
+  WebsiteSecondary: MyString
+  DisplayOrder: 1.5
+  active: false
+  IsAdmin: false

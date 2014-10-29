@@ -1,0 +1,109 @@
+<%= form_for(@db_member) do |f| %>
+  <% if @db_member.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@db_member.errors.count, "error") %> prohibited this db_member from being saved:</h2>
+
+      <ul>
+      <% @db_member.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :MembershipId %><br>
+    <%= f.text_field :MembershipId %>
+  </div>
+  <div class="field">
+    <%= f.label :MembershipType %><br>
+    <%= f.text_field :MembershipType %>
+  </div>
+  <div class="field">
+    <%= f.label :Certified %><br>
+    <%= f.check_box :Certified %>
+  </div>
+  <div class="field">
+    <%= f.label :Prefix %><br>
+    <%= f.text_field :Prefix %>
+  </div>
+  <div class="field">
+    <%= f.label :FirstName %><br>
+    <%= f.text_field :FirstName %>
+  </div>
+  <div class="field">
+    <%= f.label :MiddleName %><br>
+    <%= f.text_field :MiddleName %>
+  </div>
+  <div class="field">
+    <%= f.label :LastName %><br>
+    <%= f.text_field :LastName %>
+  </div>
+  <div class="field">
+    <%= f.label :Title %><br>
+    <%= f.text_field :Title %>
+  </div>
+  <div class="field">
+    <%= f.label :ShortSummary %><br>
+    <%= f.text_field :ShortSummary %>
+  </div>
+  <div class="field">
+    <%= f.label :FullSammary %><br>
+    <%= f.text_field :FullSammary %>
+  </div>
+  <div class="field">
+    <%= f.label :Address %><br>
+    <%= f.text_field :Address %>
+  </div>
+  <div class="field">
+    <%= f.label :City %><br>
+    <%= f.text_field :City %>
+  </div>
+  <div class="field">
+    <%= f.label :Pin %><br>
+    <%= f.text_field :Pin %>
+  </div>
+  <div class="field">
+    <%= f.label :MobilePhone %><br>
+    <%= f.text_field :MobilePhone %>
+  </div>
+  <div class="field">
+    <%= f.label :LandLine %><br>
+    <%= f.text_field :LandLine %>
+  </div>
+  <div class="field">
+    <%= f.label :EmailPrimary %><br>
+    <%= f.text_field :EmailPrimary %>
+  </div>
+  <div class="field">
+    <%= f.label :Email %><br>
+    <%= f.text_field :Email %>
+  </div>
+  <div class="field">
+    <%= f.label :Secondary %><br>
+    <%= f.text_field :Secondary %>
+  </div>
+  <div class="field">
+    <%= f.label :WebsitePrimary %><br>
+    <%= f.text_field :WebsitePrimary %>
+  </div>
+  <div class="field">
+    <%= f.label :WebsiteSecondary %><br>
+    <%= f.text_field :WebsiteSecondary %>
+  </div>
+  <div class="field">
+    <%= f.label :DisplayOrder %><br>
+    <%= f.text_field :DisplayOrder %>
+  </div>
+  <div class="field">
+    <%= f.label :active %><br>
+    <%= f.check_box :active %>
+  </div>
+  <div class="field">
+    <%= f.label :IsAdmin %><br>
+    <%= f.check_box :IsAdmin %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
