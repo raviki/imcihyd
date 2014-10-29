@@ -3,7 +3,6 @@ Rails.application.routes.draw do
 
   resources :db_members
 
-  resources :users
   
   get 'users/new'
 
