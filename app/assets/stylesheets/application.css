@@ -93,6 +93,11 @@ li.header-menuitem:hover
 }
 
 
+.homebanner
+{
+	width: 100%;
+}
+
 .nav-tabs {
   border-bottom: 0; }
   .nav-tabs > li {
