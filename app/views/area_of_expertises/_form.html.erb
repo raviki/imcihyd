@@ -1,0 +1,29 @@
+<%= form_for(@area_of_expertise) do |f| %>
+  <% if @area_of_expertise.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@area_of_expertise.errors.count, "error") %> prohibited this area_of_expertise from being saved:</h2>
+
+      <ul>
+      <% @area_of_expertise.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :Title %><br>
+    <%= f.text_field :Title %>
+  </div>
+  <div class="field">
+    <%= f.label :Filed %><br>
+    <%= f.text_field :Filed %>
+  </div>
+  <div class="field">
+    <%= f.label :Domain %><br>
+    <%= f.text_field :Domain %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

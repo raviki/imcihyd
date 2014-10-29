@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @area_of_expertise.Title %>
+</p>
+
+<p>
+  <strong>Filed:</strong>
+  <%= @area_of_expertise.Filed %>
+</p>
+
+<p>
+  <strong>Domain:</strong>
+  <%= @area_of_expertise.Domain %>
+</p>
+
+<%= link_to 'Edit', edit_area_of_expertise_path(@area_of_expertise) %> |
+<%= link_to 'Back', area_of_expertises_path %>

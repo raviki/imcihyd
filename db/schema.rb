@@ -11,7 +11,15 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141029182801) do
+ActiveRecord::Schema.define(version: 20141029194637) do
+
+  create_table "area_of_expertises", force: true do |t|
+    t.string   "Title"
+    t.string   "Filed"
+    t.string   "Domain"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "db_members", force: true do |t|
     t.string   "MembershipId"

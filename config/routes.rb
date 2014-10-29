@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
 
 
+  resources :area_of_expertises
+
   resources :db_members
 
   
