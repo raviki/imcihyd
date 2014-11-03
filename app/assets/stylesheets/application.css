@@ -55,9 +55,37 @@ html body nav.navbar.navbar-default div.container-fluid.header-box div.navbar-he
 	padding: 0.5em 1em;
 }
 
-.socialnestwordsites 
+
+html body div.main-layout div.wrapper nav.navbar.navbar-default.header-block div.navbar-header div#example-navbar-collapse.collapse.navbar-collapse table.nav.navbar-nav.pull-left.hidden-phone
 {
-	margin-top:5em;
+	max-width: 40%;
+}
+.socialnestwordsitesimage
+{
+	margin-top:1em;
+	height:2em;
+	padding:0.25em;
+	border: 2px solid #DDD;
+    border-right-color: #FFF;
+}
+
+.socialnestwordsitesimage:hover
+{
+	border: 2px solid #DDD;
+    border-bottom-color: #0071CE;
+     border-right-color: #0071CE;
+	
+}
+
+table tbody tr td a.socialnestwordsites:hover
+{
+	background:none repeat scroll 0 0 transparent;
+}
+
+table.nav.navbar-nav.pull-left tbody tr td.siteTitle
+{
+	padding-top:1em;
+	color:#0071CE;
 }
 
 .header-box
@@ -193,4 +221,37 @@ html body div.main-layout div.wrapper nav.navbar.navbar-default.header-block div
 	margin: 8em 0 0.5em 0;
 	min-height: 3em;
 	
+}
+
+
+.alert-box {
+    color:#555;
+    border-radius:5px;
+    font-family:Tahoma,Geneva,Arial,sans-serif;font-size:1.1em;
+    padding:0.75em 0.75em 0.75em 3em;
+    margin:0.5em 2em;
+}
+
+
+
+.alert-box span {
+    font-weight:bold;
+    text-transform:uppercase;
+}
+
+.error {
+    background:#ffecec url('images/error.png') no-repeat 10px 50%;
+    border:1px solid #f5aca6;
+}
+.success {
+    background:#e9ffd9 url('images/success.png') no-repeat 10px 50%;
+    border:1px solid #a6ca8a;
+}
+.warning {
+    background:#fff8c4 url('images/warning.png') no-repeat 10px 50%;
+    border:1px solid #f2c779;
+}
+.notice {
+    background:#e3f7fc url('images/notice.png') no-repeat 10px 50%;
+    border:1px solid #8ed9f6;
 }

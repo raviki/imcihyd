@@ -3963,7 +3963,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
     float: left;
   }
   .navbar-nav > li > a {
-    padding: 3em 1.75em;
+    padding: 3em 20%;
   }
   .navbar-nav.navbar-right:last-child {
     margin-right: -15px;

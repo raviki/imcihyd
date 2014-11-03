@@ -5,8 +5,22 @@
    	  <div class="navbar-brand">
    	  	<a href="/home"> <%= image_tag("logo.jpg", :class => "header-logo pull-left") %></a>
    	  </div>
-      <%= image_tag("Untitled.jpg", :class => "pull-left pull-down socialnestwordsites") %>
-    
+   	   <table class="nav navbar-nav pull-left visible-phone">
+		<tbody>
+			<tr><td class="siteTitle">
+   				<b>
+   	  				THE INSTITUTE OF MANAGEMENT CONSULTANTS OF INDIA<br>HYDERABAD CHAPTER
+   				</b>
+   			</td></tr>
+   			<tr><td> 
+   				
+   				
+   				<a class="socialnestwordsites" href="https://www.facebook.com/imci.hyderabad"> <%= image_tag("facebook-page-logo.jpg", :class=> "socialnestwordsitesimage") %> </a>
+   				<a class="socialnestwordsites" href="https://www.linkedin.com/groups/IMCI-Hyderabad-3644753/about"> <%= image_tag("LinkedIn-Logo.png", :class=> "socialnestwordsitesimage") %>  </a>
+   			</td></tr>
+   		</tbody>
+   	</table>
+      
       <button type="button" class="navbar-toggle span12" data-toggle="collapse" 
          data-target="#example-navbar-collapse">
          <span class="sr-only">Toggle navigation</span>
@@ -15,7 +29,24 @@
          <span class="icon-bar"></span>
       </button
    </div>
-	<div class="collapse navbar-collapse" id="example-navbar-collapse">
+  <div class="collapse navbar-collapse" id="example-navbar-collapse">
+   <table class="nav navbar-nav pull-left hidden-phone">
+		<tbody>
+			<tr><td class="siteTitle">
+   				<b>
+   	  				THE INSTITUTE OF MANAGEMENT CONSULTANTS OF INDIA<br>HYDERABAD CHAPTER
+   				</b>
+   			</td></tr>
+   			<tr><td> 
+   				
+   				
+   				<a class="socialnestwordsites" href="https://www.facebook.com/imci.hyderabad"> <%= image_tag("facebook-page-logo.jpg", :class=> "socialnestwordsitesimage") %> </a>
+   				<a class="socialnestwordsites" href="https://www.linkedin.com/groups/IMCI-Hyderabad-3644753/about"> <%= image_tag("LinkedIn-Logo.png", :class=> "socialnestwordsitesimage") %>  </a>
+   			</td></tr>
+   		</tbody>
+   	</table>
+   
+	
 		<ul class="nav navbar-nav pull-right">
         	<li class="header-menuitem"><a href="/home">Home</a></li>
 	        <li class="header-menuitem"><a href="/aboutus">About Us</a></li>
