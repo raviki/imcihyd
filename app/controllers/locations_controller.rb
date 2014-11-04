@@ -61,6 +61,7 @@ class LocationsController < ApplicationController
   # DELETE /locations/1.json
   def destroy
     require_user()
+    
     @location.destroy
     respond_to do |format|
       format.html { redirect_to locations_url, notice: 'Location was successfully destroyed.' }
