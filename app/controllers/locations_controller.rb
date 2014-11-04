@@ -4,26 +4,31 @@ class LocationsController < ApplicationController
   # GET /locations
   # GET /locations.json
   def index
+    require_user()
     @locations = Location.all
   end
 
   # GET /locations/1
   # GET /locations/1.json
   def show
+    require_user()
   end
 
   # GET /locations/new
   def new
+    require_user()
     @location = Location.new
   end
 
   # GET /locations/1/edit
   def edit
+    require_user()
   end
 
   # POST /locations
   # POST /locations.json
   def create
+    require_user()
     @location = Location.new(location_params)
 
     respond_to do |format|
@@ -40,6 +45,7 @@ class LocationsController < ApplicationController
   # PATCH/PUT /locations/1
   # PATCH/PUT /locations/1.json
   def update
+    require_user()
     respond_to do |format|
       if @location.update(location_params)
         format.html { redirect_to @location, notice: 'Location was successfully updated.' }
@@ -54,6 +60,7 @@ class LocationsController < ApplicationController
   # DELETE /locations/1
   # DELETE /locations/1.json
   def destroy
+    require_user()
     @location.destroy
     respond_to do |format|
       format.html { redirect_to locations_url, notice: 'Location was successfully destroyed.' }
