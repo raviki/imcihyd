@@ -7,10 +7,10 @@ Rails.application.routes.draw do
   resources :db_members
   
   resources :locations 
+  
+  root to: "home#index"
 
   
-  get 'users/new'
-
   get 'password_resets/update'
 
   get 'password_resets/new'
@@ -34,8 +34,7 @@ Rails.application.routes.draw do
   get "activities"  => "activities#index", :as => "activities"
   get "members" => "members#index", :as => "members"
   get "home"  => "home#index", :as => "home"
-  
-  root to: "home#index"
+ 
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
