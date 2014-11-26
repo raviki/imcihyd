@@ -9,7 +9,6 @@ gem 'sqlite3', group: :development
 gem 'rails_12factor', group: :production
 # Use SCSS for stylesheets
 
-
 gem 'rails-bootstrap'
 
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
@@ -39,7 +38,7 @@ gem 'spring',        group: :development
 
 gem 'geocoder'
 gem 'gmaps4rails'
-gem 'bcrypt', '~> 3.1.7'
+gem "bcrypt-ruby", :require => "bcrypt"
 
 
 

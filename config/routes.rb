@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+  resources :contact_forms
 
   resources :area_of_expertises
 
@@ -27,6 +28,7 @@ Rails.application.routes.draw do
   get 'activities/index'
 
   get "aboutus"  => "aboutus#index", :as => "aboutus"
+  get "NationalConvention"  => "national_convention#index", :as => "NationalConvention"
   get "resources"  => "resources#index", :as => "resources"
   get "contactus"  => "contactus#index", :as => "contactus"
   get "activities"  => "activities#index", :as => "activities"

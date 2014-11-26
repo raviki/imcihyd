@@ -1,0 +1,15 @@
+<div class="contacusform_page">	
+	<div class="contacusform-body center">
+		<%= form_tag contact_forms_path do  %>
+			<%= text_field_tag :Name, nil, :class=>"span6",:placeholder => "Name"%>
+			<br>
+	 		<%= text_field_tag :Phone, nil, :class=>"span6",:placeholder => "Mobile Number" %>
+	 		<br>
+	 		<%= text_field_tag :EmailId, nil, :class=>"span6",:placeholder => "Email Id" %>		
+	 		<br>
+	 		<%= text_area_tag :Message, nil, :class=>"span6",:placeholder => "Request"%>
+			<br>
+ 			<%= submit_tag "Send Message", :class => "btn span6 btn-info" %>
+  		<% end %>
+  	</div>
+</div>

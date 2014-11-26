@@ -18,282 +18,243 @@
  *= require_self
  */
 
- @import "home.css";
- 
+@import "home.css";
 
-html body
-{
-	
-    background: none repeat scroll 0 0 #0071ce;
-    min-height: 100%;  
+html body {
+
+	background: none repeat scroll 0 0 #0071ce;
+	min-height: 100%;
 }
-
 
 html, body {
-    height: 100%;
-    padding: 0 3em 1em 3em;
+	height: 100%;
+	padding: 0 3em 1em 3em;
 }
 
-div.navbar-header .navbar-brand
-{
+div.navbar-header .navbar-brand {
 	margin: 0;
-	padding:5px 1em 0 1em;
+	padding: 5px 1em 0 1em;
 	height: 100%;
 }
 
-div.navbar-header
-{
+div.navbar-header {
 	height: 100%;
-	width:100%;
+	width: 100%;
 }
 
-.header-logo
-{
+.header-logo {
 	max-height: 5em;
 }
 
-html body nav.navbar.navbar-default div.container-fluid.header-box div.navbar-header a.navbar-brand
-{
+html body nav.navbar.navbar-default div.container-fluid.header-box div.navbar-header a.navbar-brand {
 	padding: 0.5em 1em;
 }
 
-
-html body div.main-layout div.wrapper nav.navbar.navbar-default.header-block div.navbar-header div#example-navbar-collapse.collapse.navbar-collapse table.nav.navbar-nav.pull-left.hidden-phone
-{
+html body div.main-layout div.wrapper nav.navbar.navbar-default.header-block div.navbar-header div#example-navbar-collapse.collapse.navbar-collapse table.nav.navbar-nav.pull-left.hidden-phone {
 	max-width: 40%;
 }
-.socialnestwordsitesimage
-{
-	margin-top:1.25em;
-	height:2em;
-	padding:0.25em;
+.socialnestwordsitesimage {
+	margin-top: 1.25em;
+	height: 2em;
+	padding: 0.25em;
 	border: 2px solid #DDD;
-    border-right-color: #FFF;
+	border-right-color: #FFF;
 }
 
-.socialnestwordsitesimage:hover
-{
+.socialnestwordsitesimage:hover {
 	border: 2px solid #DDD;
-    border-bottom-color: #0071CE;
-     border-right-color: #0071CE;
-	
+	border-bottom-color: #0071CE;
+	border-right-color: #0071CE;
 }
 
-table tbody tr td a.socialnestwordsites:hover
-{
-	background:none repeat scroll 0 0 transparent;
+table tbody tr td a.socialnestwordsites:hover {
+	background: none repeat scroll 0 0 transparent;
 }
 
-table.nav.navbar-nav.pull-left tbody tr td.siteTitle
-{
-	padding-top:1em;
-	color:#0071CE;
+table.nav.navbar-nav.pull-left tbody tr td.siteTitle {
+	padding-top: 1em;
+	color: #0071CE;
 }
 
-@media (min-width: 1200px)  and (max-width: 1262px) {
-	table.nav.navbar-nav.pull-left tbody tr td.siteTitle
-	{
-		font-size:11px;	
+@media (min-width: 1200px) and (max-width: 1262px) {
+	table.nav.navbar-nav.pull-left tbody tr td.siteTitle {
+		font-size: 11px;
 	}
-	
+
 }
 
-@media (min-width: 1100px)  and (max-width: 1199px) {
-	table.nav.navbar-nav.pull-left tbody tr td.siteTitle
-	{
-		font-size:9px;	
+@media (min-width: 1100px) and (max-width: 1199px) {
+	table.nav.navbar-nav.pull-left tbody tr td.siteTitle {
+		font-size: 9px;
 	}
-	
+
 	.navbar-nav > li > a {
-    padding: 3em 1em;
-  }
+		padding: 3em 1em;
+	}
 }
 
-@media (min-width: 1000px)  and (max-width: 1099px) {
-	
+@media (min-width: 1000px) and (max-width: 1099px) {
+
 	.navbar-nav > li > a {
-    padding: 3em 0.5em;
-  }
+		padding: 3em 0.5em;
+	}
 }
 
 @media (max-width: 999px) {
-	table.nav.navbar-nav.pull-left tbody tr td.siteTitle
-	{
-		font-size:12px;	
-		
+	table.nav.navbar-nav.pull-left tbody tr td.siteTitle {
+		font-size: 12px;
 	}
-	
-	html body div.main-layout div.wrapper nav.navbar.navbar-default.header-block div.navbar-header div#example-navbar-collapse.collapse.navbar-collapse table.nav.navbar-nav.pull-left.hidden-phone
-	{
-		width:100%;
+
+	html body div.main-layout div.wrapper nav.navbar.navbar-default.header-block div.navbar-header div#example-navbar-collapse.collapse.navbar-collapse table.nav.navbar-nav.pull-left.hidden-phone {
+		width: 100%;
 	}
-	
+
 }
 
-.header-box
-{
+.header-box {
 	min-height: 7.5em;
 }
 
-.header-menuitem
-{
+.header-menuitem {
 	min-height: 6em;
 }
 
 @media (max-width: 769px) {
-	.header-menuitem
-	{
+	.header-menuitem {
 		min-height: 2em;
-		width:100%;
+		width: 100%;
 	}
-	html body div.main-layout div.wrapper nav.navbar.navbar-default.header-block div.navbar-header div#example-navbar-collapse.navbar-collapse.collapse.in ul.nav.navbar-nav.pull-right
-	{
-		width:100%;
-		margin:0;
-	}
-}
-
-li.header-menuitem a:hover,
-li.header-menuitem:hover
-{
-	background-color: 	#0071ce;
-	a{
-		font-color:#FFFFFF;
+	html body div.main-layout div.wrapper nav.navbar.navbar-default.header-block div.navbar-header div#example-navbar-collapse.navbar-collapse.collapse.in ul.nav.navbar-nav.pull-right {
+		width: 100%;
+		margin: 0;
 	}
 }
 
-.activities-page,
-.aboutus_page,
-.members-page,
-.contactuse-page
-{
+li.header-menuitem a:hover, li.header-menuitem:hover {
+	background-color: #0071ce;a{
+	font-color: #FFFFFF;
+}
+}
+
+.activities-page, .aboutus_page, .members-page, .contactuse-page {
 	margin: 2em;
 }
 
-.keymember-table
-{
+.keymember-table {
 	width: 100%;
 }
 
-
-.homebanner
-{
+.homebanner {
 	width: 100%;
 }
 
-.member-image
-{
+.member-image {
 	width: 80%;
 	min-height: 10em;
 }
 
 .nav-tabs {
-  border-bottom: 0; }
-  .nav-tabs > li {
-    width: 100%; }
-    .nav-tabs > li > a {
-      border: 1px solid transparent;
-      border-radius: 4px 0 0 4px;
-      margin-right: 0; }
-    .nav-tabs > li.active > a, .nav-tabs > li.active > a:hover {
-      background: #0071ce;
-      color: #FFFFFF;
-      border: 1px solid #DDD;
-      border-right-color: #FFF;
-      margin-right: -1px;
-      position: relative;
-      z-index: 1; }
+	border-bottom: 0;
+}
+.nav-tabs > li {
+	width: 100%;
+}
+.nav-tabs > li > a {
+	border: 1px solid transparent;
+	border-radius: 4px 0 0 4px;
+	margin-right: 0;
+}
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover {
+	background: #0071ce;
+	color: #FFFFFF;
+	border: 1px solid #DDD;
+	border-right-color: #FFF;
+	margin-right: -1px;
+	position: relative;
+	z-index: 1;
+}
 
 .tab-content {
-  border: 1px solid #DDD;
-  border-radius: 4px;
-  margin-left: -31px;
-  margin-bottom: 2em;
-  min-height: 20em;
-  padding: 2em 4em;
-  position: relative;
-  z-index: 0; }
-
+	border: 1px solid #DDD;
+	border-radius: 4px;
+	margin-left: -31px;
+	margin-bottom: 2em;
+	min-height: 20em;
+	padding: 2em 4em;
+	position: relative;
+	z-index: 0;
+}
 
 /* give the wrapper a padding-bottom and negative margin-bottom equal to the footer height */
 
+.main-layout {
 
-.main-layout
-{
-
-	min-height: 100%;   
+	min-height: 100%;
 	margin: 0 0 0 0;
 	background: none repeat scroll 0 0 #FFFFFF;
 	border-radius: 0 0 4px 4px;
-    padding-bottom: 0;
+	padding-bottom: 0;
 }
 
-.wrapper
-{
-		height: 100%;
+.wrapper {
+	height: 100%;
 }
 
-.main-content
-{
+.main-content {
 
 	height: 100%;
 }
 
-
 .footer {
-    height: 3em;
+	height: 3em;
 }
 
-
-.resources_page .thumbnail-img
-{
-	height:15em;
+.resources_page .thumbnail-img {
+	height: 15em;
 }
 
-
-.resources_page.text-center .thumbnail-img img
-{
+.resources_page.text-center .thumbnail-img img {
 	max-width: 100%;
-  	max-height:15em;
+	max-height: 15em;
 }
 
-
-html body div.main-layout div.wrapper nav.navbar.navbar-default.header-block div.navbar-header .navbar-toggle
-{
+html body div.main-layout div.wrapper nav.navbar.navbar-default.header-block div.navbar-header .navbar-toggle {
 	margin: 8em 0 0.5em 0;
 	min-height: 3em;
-	
 }
-
 
 .alert-box {
-    color:#555;
-    border-radius:5px;
-    font-family:Tahoma,Geneva,Arial,sans-serif;font-size:1.1em;
-    padding:0.75em 0.75em 0.75em 3em;
-    margin:0.5em 2em;
+	color: #555;
+	border-radius: 5px;
+	font-family: Tahoma, Geneva, Arial, sans-serif;
+	font-size: 1.1em;
+	padding: 0.75em 0.75em 0.75em 3em;
+	margin: 0.5em 2em;
 }
 
-
-
 .alert-box span {
-    font-weight:bold;
-    text-transform:uppercase;
+	font-weight: bold;
+	text-transform: uppercase;
 }
 
 .error {
-    background:#ffecec url('images/error.png') no-repeat 10px 50%;
-    border:1px solid #f5aca6;
+	background: #ffecec url('images/error.png') no-repeat 10px 50%;
+	border: 1px solid #f5aca6;
 }
 .success {
-    background:#e9ffd9 url('images/success.png') no-repeat 10px 50%;
-    border:1px solid #a6ca8a;
+	background: #e9ffd9 url('images/success.png') no-repeat 10px 50%;
+	border: 1px solid #a6ca8a;
 }
 .warning {
-    background:#fff8c4 url('images/warning.png') no-repeat 10px 50%;
-    border:1px solid #f2c779;
+	background: #fff8c4 url('images/warning.png') no-repeat 10px 50%;
+	border: 1px solid #f2c779;
 }
 .notice {
-    background:#e3f7fc url('images/notice.png') no-repeat 10px 50%;
-    border:1px solid #8ed9f6;
+	background: #e3f7fc url('images/notice.png') no-repeat 10px 50%;
+	border: 1px solid #8ed9f6;
 }
+
+.NationalConventionUrl:hover {
+	color: #A94442;
+}
+
