@@ -4,28 +4,64 @@
 		.Registration {
 			padding: 5px 10px;
 			display: inline-flex;
-			background: black url(button.png) repeat-x bottom !important;
+			background: rgb(1, 211, 1) url(button.png) repeat-x bottom !important;
 			border: none;
 			color: #FFFFFF !important;
-			cursor: pointer;
-			//font-weight: bold;
+			cursor: pointer;//
+			font-weight: bold;
 			border-radius: 5px;
 			-moz-border-radius: 5px;
 			-webkit-border-radius: 5px;
 			text-shadow: 1px 1px #666;
-			
 		}
 		.Registration:hover {
 			color: white;
 			background-color: none;
 		}
-		
-		a.visited{
-			color:#8ED9F6;
+		.RegisterButton {
+			background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #44c767), color-stop(1, #5cbf2a));
+			background: -moz-linear-gradient(top, #44c767 5%, #5cbf2a 100%);
+			background: -webkit-linear-gradient(top, #44c767 5%, #5cbf2a 100%);
+			background: -o-linear-gradient(top, #44c767 5%, #5cbf2a 100%);
+			background: -ms-linear-gradient(top, #44c767 5%, #5cbf2a 100%);
+			background: linear-gradient(to bottom, #44c767 5%, #5cbf2a 100%);
+			filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#44c767', endColorstr='#5cbf2a',GradientType=0);
+			background-color: #44c767;
+			-moz-border-radius: 5px;
+			-webkit-border-radius: 5px;
+			border-radius: 5px;
+			border: 2px solid #18ab29;
+			display: inline-block;
+			cursor: pointer;
+			color: #ffffff;
+			font-family: inherit;
+			font-size: 15px;
+			padding: 5px 5px;
+			text-decoration: none;
+			text-shadow: 0px 1px 0px #2f6627;
+			margin-right: 15px;
 		}
-		
-		a:hover{
-			background:none;
+		.RegisterButton:hover {
+			background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #5cbf2a), color-stop(1, #44c767));
+			background: -moz-linear-gradient(top, #5cbf2a 5%, #44c767 100%);
+			background: -webkit-linear-gradient(top, #5cbf2a 5%, #44c767 100%);
+			background: -o-linear-gradient(top, #5cbf2a 5%, #44c767 100%);
+			background: -ms-linear-gradient(top, #5cbf2a 5%, #44c767 100%);
+			background: linear-gradient(to bottom, #5cbf2a 5%, #44c767 100%);
+			filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#5cbf2a', endColorstr='#44c767',GradientType=0);
+			background-color: #5cbf2a;
+		}
+		.RegisterButton:active {
+			position: relative;
+			top: 1px;
+		}
+
+		a.visited {
+			color: #8ED9F6;
+		}
+
+		a:hover {
+			background: none;
 		}
 	</style>
 	<head>
@@ -50,7 +86,7 @@
 				<div  class='alert-box notice'>
 					<span class="NationalConventionUrl">IMCI Hyderabad is conducting the Annual Convention on 23-24 January 2015 </span>
 					<a style="margin-left: 10px" href="/NationalConvention" target="_blank" > More Info... </a>
-					<a class="Registration" style="margin-left: 10px" href="http://www.meraevents.com/event/imci-national-convention" target="_blank"> Online Registration >> </a>
+					<a class="Registration" style="margin-left: 10px float:none !important" href="http://www.meraevents.com/event/imci-national-convention" target="_blank"> Online Registration >> </a>
 				</div> </a>
 				<div class="main-content">
 					<%= yield %>
