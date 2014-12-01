@@ -256,5 +256,6 @@ html body div.main-layout div.wrapper nav.navbar.navbar-default.header-block div
 
 .NationalConventionUrl:hover {
 	color: #A94442;
+	background: none;
 }
 
