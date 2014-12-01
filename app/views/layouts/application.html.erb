@@ -1,22 +1,27 @@
 <!DOCTYPE html>
 <html>
 	<style>
-		.button {
+		.Registration {
 			padding: 5px 10px;
 			display: inline-flex;
-			background: #777 url(button.png) repeat-x bottom;
+			background: black url(button.png) repeat-x bottom;
 			border: none;
-			color: #fff;
+			color: #FFFFFF !important;
 			cursor: pointer;
-			font-weight: bold;
+			//font-weight: bold;
 			border-radius: 5px;
 			-moz-border-radius: 5px;
 			-webkit-border-radius: 5px;
 			text-shadow: 1px 1px #666;
+			
 		}
-		.button:hover {
+		.Registration:hover {
 			color: white;
 			background-color: none;
+		}
+		
+		a.visited{
+			color:#8ED9F6;
 		}
 	</style>
 	<head>
@@ -41,7 +46,7 @@
 				<div  class='alert-box notice'>
 					<span class="NationalConventionUrl">IMCI Hyderabad is conducting the Annual Convention on 23-24 January 2015 </span>
 					<a style="margin-left: 10px" href="/NationalConvention" target="_blank" > More Info... </a>
-					<a class="button" style="margin-left: 10px" href="http://www.meraevents.com/event/imci-national-convention" target="_blank"> Online Registration >> </a>
+					<a class="Registration" style="margin-left: 10px" href="http://www.meraevents.com/event/imci-national-convention" target="_blank"> Online Registration >> </a>
 				</div> </a>
 				<div class="main-content">
 					<%= yield %>
