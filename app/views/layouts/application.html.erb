@@ -3,6 +3,7 @@
 	<style>
 		.Registration {
 			padding: 5px 10px;
+			margin-left:1.5em;
 			display: inline-flex;
 			background: rgb(1, 211, 1) url(button.png) repeat-x bottom !important;
 			border: none;
@@ -85,8 +86,16 @@
 				<a data-alert href="/NationalConvention">
 				<div  class='alert-box notice'>
 					<span class="NationalConventionUrl">IMCI Hyderabad is conducting the Annual Convention on 23-24 January 2015 </span>
-					<a style="margin-left: 10px" href="/NationalConvention" target="_blank" > More Info... </a>
-					<a class="Registration" style="margin-left: 10px float:none !important" href="http://www.meraevents.com/event/imci-national-convention&ucode=organizer" target="_blank"> Online Registration >> </a>
+					<a class="Registration" style="margin-left: 1.5em float:right !important" href="http://www.meraevents.com/event/imci-national-convention&ucode=organizer" target="_blank"> Online Registration >> </a>
+					
+					<a class="pull-right" style="margin-right: 1.5em; font-size: 1.25em;" href="/NationalConvention" target="_blank" > 
+						<% ddate = Date.new(2015, 1, 23)  %>
+						
+						<span class="badge badge-important" style="padding: 5px 10px;">
+							<%= (ddate - Date.today).to_i %> Days to Go 
+						</span>
+					 </a>
+					 
 				</div> </a>
 				<div class="main-content">
 					<%= yield %>
